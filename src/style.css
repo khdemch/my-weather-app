@@ -1,0 +1,240 @@
+body {
+    color: #7c3233;
+    background-color: #ecf2f9;
+  }
+  
+  .container {
+    max-width: 28em;
+    margin: 1.9em auto 0.9em;
+    border-radius: 3.125em;
+    border: solid 0.625em;
+    background-image: url(../images/sakura.jpg);
+    background-size: cover;
+    background-position: 9% 0;
+  }
+  .container,
+  .search-button {
+    border-color: #f9ecec;
+  }
+  .container-search,
+  .weekday-temperature {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+  }
+  .table-content,
+  .oclock,
+  .current-weather,
+  .weekday-temperature,
+  .container-search,
+  .phenomen,
+  .weekdays,
+  .sunflower {
+    position: relative;
+  }
+  .gps,
+  .search-button {
+    background-color: transparent;
+  }
+  .gps {
+    border: none;
+    font-size: 1.575rem;
+    padding-left: 4.5em;
+  }
+  
+  .gps,
+  .search-button,
+  .current-time:hover,
+  .current-weather:hover,
+  .phenomen:hover {
+    cursor: pointer;
+  }
+  .gps,
+  .search-button {
+    color: #f9ecec;
+  }
+  
+  .city-search {
+    line-height: 1.5em;
+    border: 0.2rem solid #f9ecec;
+    border-top: none;
+    margin-left: 0.938em;
+    margin-right: 0.938em;
+  }
+  
+  .city-search,
+  .current-time,
+  .current-weather,
+  .phenomen,
+  .search-button {
+    transition: all 200ms ease-in-out;
+  }
+  
+  .city-search:hover,
+  .current-time:hover,
+  .current-weather:hover {
+    border: 0.3rem solid#f0d9da;
+  }
+  
+  .search-button,
+  #date,
+  #current-day,
+  .current-time,
+  .table-content,
+  .weekdays,
+  footer {
+    text-align: center;
+  }
+  
+  .search-button {
+    line-height: 1.25em;
+    border-radius: 1.25em;
+    margin: 0.3em;
+  }
+  
+  .search-button:hover {
+    background-color: #f9ecec;
+    color: #7c3233;
+  }
+  
+  .gps:hover {
+    color: #f0d9da;
+  }
+  
+  #current-day {
+    padding-top: 6em;
+  }
+  
+  #date,
+  #current-day {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.6rem;
+  }
+  
+  .table,
+  .current-time,
+  .current-weather,
+  .phenomen,
+  .weekdays {
+    border: 0.2rem solid #f0d9da;
+  }
+  
+  .table,
+  .current-time,
+  .current-weather {
+    border-radius: 50%;
+    display: block;
+  }
+  
+  .weekdays,
+  .phenomen {
+    border-radius: 45%;
+    padding: 1.2em 0.7em;
+  }
+  
+  #humidity {
+    top: 1.5em;
+    left: 0.6em;
+  }
+  
+  #pressure {
+    top: 1.5em;
+    right: -6em;
+  }
+  
+  #wind {
+    left: -5.6em;
+    top: 7.5rem;
+  }
+  
+  #visibility {
+    right: 0.5em;
+    bottom: -7.5rem;
+  }
+  
+  #current-day,
+  .weekdays {
+    color: white;
+  }
+  
+  #current-day,
+  #date,
+  .weekdays,
+  .table,
+  .city-search,
+  .search-button {
+    font-weight: bold;
+    font-family: "Finger Paint", cursive;
+  }
+  
+  .phenomen {
+    font-size: 0.78rem;
+  }
+  
+  .table {
+    width: 20.625em;
+    height: 20.625em;
+    margin: 0rem auto;
+    background-color: #fffccb;
+  }
+  
+  .current-time,
+  .current-weather {
+    width: 4.7rem;
+    height: 4.7rem;
+    margin: 0 auto;
+  }
+  
+  .current-time {
+    display: grid;
+    place-items: center;
+  }
+  
+  .table-content {
+    list-style: none;
+    padding: 0;
+    top: 1em;
+  }
+  
+  #city,
+  .current-time {
+    font-size: 1.56rem;
+  }
+  
+  .temperature {
+    font-size: 0.95rem;
+  }
+  
+  .current-weather {
+    bottom: -2.3em;
+  }
+  
+  .sunflower {
+    max-width: 6.25em;
+    max-height: 6.25em;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .weekdays {
+    margin-left: 0.95em;
+    margin-top: 6.875em;
+  }
+  
+  #monday {
+    margin-left: 2.45em;
+  }
+  
+  .sun {
+    color: #fff982;
+  }
+  
+  .weekdays,
+  footer {
+    font-size: 0.95rem;
+    font-family: "Finger Paint", cursive;
+  }
