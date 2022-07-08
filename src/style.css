@@ -22,7 +22,9 @@ body {
     flex-wrap: wrap;
     align-items: stretch;
     width: 100%;
+    justify-content: center;
   }
+  .container-search 
   .table-content,
   .oclock,
   .current-weather,
@@ -40,7 +42,6 @@ body {
   .gps {
     border: none;
     font-size: 1.575rem;
-    padding-left: 4.5em;
   }
   
   .gps,
@@ -223,10 +224,6 @@ body {
   .weekdays {
     margin-left: 0.95em;
     margin-top: 6.875em;
-  }
-  
-  #monday {
-    margin-left: 2.45em;
   }
   
   .sun {
