@@ -136,12 +136,12 @@ body {
   
   #humidity {
     top: 1.5em;
-    left: 0.6em;
+    left: 0.8em;
   }
   
   #pressure {
     top: 1.5em;
-    right: -6em;
+    right: -6.7em;
   }
   
   #wind {
@@ -150,7 +150,7 @@ body {
   }
   
   #visibility {
-    right: 0.5em;
+    right: -0.5em;
     bottom: -7.5rem;
   }
   
@@ -208,7 +208,7 @@ body {
   }
   
   .current-weather {
-    bottom: -2.3em;
+    bottom: -2.4em;
   }
   
   .sunflower {
