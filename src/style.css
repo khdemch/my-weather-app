@@ -174,7 +174,7 @@ body {
   }
   
   .table {
-    width: 20.625em;
+    max-width: 20.625em;
     height: 20.625em;
     margin: 0rem auto;
     background-color: #fffccb;
@@ -182,7 +182,7 @@ body {
   
   .current-time,
   .current-weather {
-    width: 4.7rem;
+    max-width: 4.7rem;
     height: 4.7rem;
     margin: 0 auto;
   }
