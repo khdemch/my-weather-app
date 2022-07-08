@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding workshops for women | SheCodes</title>
+    <script
+      src="https://kit.fontawesome.com/5e5f7cf09e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-search">
+        <button class="gps"><i class="fa-solid fa-map-pin"></i></button>
+        <form id="search-form">
+          <input
+            type="text"
+            class="city-search"
+            id="city-input"
+            placeholder="Enter your city"
+            autofocus="on"
+          />
+          <input type="submit" class="search-button" value="Search" />
+        </form>
+      </div>
+      <span id="current-day"></span>
+      <div class="table">
+        <div class="current-time"><span class="oclock"></span></div>
+        <span id="humidity" class="phenomen">
+          <i class="fa fa-tint" aria-hidden="true"></i> &nbsp;<span
+            id="showHumidity"
+          ></span
+          >%</span
+        >
+        <span id="wind" class="phenomen">
+          <i class="fa-solid fa-wind"></i>
+          <span id="showWind"></span> m/s</span
+        >
+        <span id="pressure" class="phenomen"
+          ><span id="showPressure"></span> hpA
+        </span>
+        <span id="visibility" class="phenomen">
+          <i class="fa-solid fa-eye"></i>
+          <span id="showVisibility"></span> km</span
+        >
+        <ul class="table-content">
+          <li class="temperature"><span id="celcius"></span> °C</li>
+          <li id="city"></li>
+          <li class="temperature">
+            <span id="fahrenheit"></span
+            ><span id="fahrenheit-link"><a href="#"> F</a></span>
+          </li>
+        </ul>
+        <div class="current-weather">
+          <img class="sunflower" src="images/sun.png" alt="sun" />
+        </div>
+      </div>
+      <span id="date"></span>
+      <div class="weekday-temperature">
+        <div class="weekdays" id="monday">
+          Mon <br />
+          <i class="fa-solid fa-sun sun"></i><br />
+          15°C
+        </div>
+        <div class="weekdays">
+          Tue <br />
+          <i class="fa-solid fa-cloud"></i><br />
+          16°C
+        </div>
+        <div class="weekdays">
+          Wed <br />
+          <i class="fa-solid fa-sun sun"></i><br />
+          15°C
+        </div>
+        <div class="weekdays">
+          Thu <br />
+          <i class="fa-solid fa-cloud"></i><br />
+          20°C
+        </div>
+        <div class="weekdays">
+          Fri <br />
+          <i class="fa-solid fa-sun sun"></i><br />
+          21°C
+        </div>
+      </div>
+    </div>
+    <footer>Created by Khrystyna Demchenko</footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
