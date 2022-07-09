@@ -51,7 +51,9 @@ function formatTime(time) {
     document.querySelector("#showVisibility").innerHTML = Math.round(
       response.data.visibility / 1000
     );
-  }
+    document.querySelector(".sunflower").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    document.querySelector(".sunflower").setAttribute("alt", response.data.weather[0].description);
+  }  
   
   function search(city) {
     let apiKey = "4788416fe9d12307dc056ca14675a0cf";
