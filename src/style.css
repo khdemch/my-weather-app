@@ -142,16 +142,16 @@ body {
   
   #pressure {
     top: 1.5em;
-    right: -6em;
+    right: -6.4em;
   }
   
   #wind {
-    left: -5.6em;
+    left: -5em;
     top: 7.5rem;
   }
   
   #visibility {
-    right: 0.3em;
+    right: -0.2em;
     bottom: -7.5rem;
   }
   
