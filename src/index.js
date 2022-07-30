@@ -25,6 +25,22 @@ function formatTime(time) {
     return `${cDay}`;
   }
   
+  function showForecast() {
+    let forecastElement = document.querySelector("#forecast");
+    let forecastHTML = "";
+    let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
+    days.forEach(function (day) {
+      forecastHTML =
+        forecastHTML +
+        `<div class="weekdays" id="monday">
+      ${day} <br />
+      <i class="fa-solid fa-sun sun"></i><br />
+      15°C
+    </div>`;
+    });
+    forecastElement.innerHTML = forecastHTML;
+  }
+
   function changeToFahrenheit(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#celcius");
@@ -102,6 +118,7 @@ function formatTime(time) {
   fahrenheitLink.addEventListener("click", changeToFahrenheit);
   
   search("Kyiv");
+  showForecast();
   
   let currentLocationButton = document.querySelector(".gps");
   currentLocationButton.addEventListener("click", getCurrentPosition);
