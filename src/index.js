@@ -24,19 +24,33 @@ function formatTime(time) {
     let cDay = days[day.getDay()];
     return `${cDay}`;
   }
+
+  function formatForecastDay(timestamp) {
+    let date = new Date(timestamp * 1000);
+    let day = date.getDay();
+    let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    return days[day];
+  }
   
   function showForecast(response) {
+    let forecast = response.data.daily;
+
     let forecastElement = document.querySelector("#forecast");
     let forecastHTML = "";
-    let days = ["Mon", "Tue", "Wed", "Thu", "Fri"];
-    days.forEach(function (day) {
+    
+    forecast.forEach(function (forecastDay, index) {
+      if (index < 5) {
       forecastHTML =
         forecastHTML +
         `<div class="weekdays" id="monday">
-      ${day} <br />
-      <i class="fa-solid fa-sun sun"></i><br />
-      15°C
+      ${formatForecastDay(forecastDay.dt)} <br />
+      <img 
+      src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+      alt=""
+      width="42"/><br />
+      ${Math.round(forecastDay.temp.day)}°C
     </div>`;
+      }
     });
     forecastElement.innerHTML = forecastHTML;
   }
