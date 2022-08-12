@@ -12,7 +12,7 @@ function formatTime(time) {
   
   function formatDate(date) {
     let cDate = date.getDate();
-    let month = date.getMonth();
+    let month = date.getMonth() + 1;
     if (month < 10) {
       month = `0${month}`;
     }
