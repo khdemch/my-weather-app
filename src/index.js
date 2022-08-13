@@ -47,7 +47,7 @@ function formatTime(time) {
       <img 
       src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
       alt=""
-      width="42"/><br />
+      width="35"/><br />
       ${Math.round(forecastDay.temp.day)}°C
     </div>`;
       }

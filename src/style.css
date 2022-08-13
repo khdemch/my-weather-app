@@ -41,7 +41,7 @@ body {
   }
   .gps {
     border: none;
-    font-size: 1.575rem;
+    font-size: 2.3rem;
   }
   
   .gps,
@@ -57,9 +57,9 @@ body {
   }
   
   .city-search {
-    line-height: 1.5em;
+    line-height: 2.3em;
     border: 0.2rem solid #f9ecec;
-    border-top: none;
+    border-top: 0.2rem solid #f9ecec;
     margin-left: 0.938em;
     margin-right: 0.938em;
   }
@@ -89,7 +89,7 @@ body {
   }
   
   .search-button {
-    line-height: 1.25em;
+    line-height: 2.3em;
     border-radius: 1.25em;
     margin: 0.3em;
   }
@@ -142,7 +142,7 @@ body {
   
   #pressure {
     top: 1.5em;
-    right: -6.4em;
+    right: -6.5em;
   }
   
   #wind {
@@ -151,7 +151,7 @@ body {
   }
   
   #visibility {
-    right: -0.2em;
+    right: -0.4em;
     bottom: -7.5rem;
   }
   
